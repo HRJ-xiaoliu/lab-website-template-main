@@ -1,4 +1,5 @@
 ---
+
 name: 熊航
 image: images/member/hang_xiong.jpg
 role: 教授
@@ -10,9 +11,7 @@ affiliation: 华中农业大学
 2006-2009年任长江大学国际学院双语教师。2018年入职华中农业大学，2022年起任院长助理。2023年担任亚洲社会仿真学会首任主席，同年以第一作者在《管理世界》发表农地流转机制仿真研究成果。研究方向涵盖农业系统建模、数字农业农村经济与智慧农业技术体系，发表《Blockchain Technology for Agriculture: Applications and Rationale》等中英文论文38篇。
 
 
-
-
-
+___
 ### 工作经历
 
 2022.06–至今      华中农业大学经济管理学院院长助理
