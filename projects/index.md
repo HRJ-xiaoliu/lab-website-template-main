@@ -2,7 +2,7 @@
 title: 项目
 nav:
   order: 2
-  tooltip: Software, datasets, and more
+  tooltip: 数据集和更多
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
