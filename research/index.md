@@ -2,7 +2,7 @@
 title: 研究
 nav:
   order: 1
-  tooltip: 出版物
+  tooltip: 相关研究成果
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
