@@ -1,5 +1,4 @@
 ---
-
 name: 熊航
 image: images/member/hang_xiong.jpg
 role: 教授
