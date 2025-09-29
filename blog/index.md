@@ -1,5 +1,5 @@
 ---
-title: 博客
+title: Posts
 nav:
   order: 4
   tooltip: 思考与杂记
