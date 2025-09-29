@@ -14,7 +14,6 @@ links:
 <br/>
 <br/>
 
-
 ### 工作经历
 
 2022.06–至今      华中农业大学经济管理学院院长助理
@@ -330,7 +329,5 @@ Chinese Economic Association in Europe (CEA Europe)
 公共政策模拟评估
 
 农业大数据管理与应用
-
-
 
 I do not plan to supervise foreign Master's or PhD students in 2025. Emails seeking for acceptance letters may not be replied
