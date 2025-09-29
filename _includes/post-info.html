@@ -1,47 +1,45 @@
 <div class="post-info">
-  {%- comment -%} 处理作者信息 {%- endcomment -%}
   {% if include.author %}
-    {%- assign authors = include.author | split: "," | map: "strip" | uniq -%}
-    {%- for author in authors -%}
-      {%- assign member = site.members | where: "slug", author | first -%}
-      {%- if member -%}
-        {%- include portrait.html lookup=author style="tiny" -%}
-      {%- else -%}
+    {% assign authors = include.author
+      | join: ","
+      | downcase
+      | split: ","
+      | array_filter
+    %}
+    {% for author in authors %}
+      {% assign member = site.members
+        | where_exp: "member", "member.slug == author"
+        | first
+      %}
+      {% if member %}
+        {% include portrait.html lookup=author style="tiny" %}
+      {% else %}
         <span data-tooltip="Author">
-          {%- include icon.html icon="fa-solid fa-feather-pointed" -%}
+          {% include icon.html icon="fa-solid fa-feather-pointed" %}
           <span>{{ author }}</span>
         </span>
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endif -%}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 
-  {%- comment -%} 处理日期 {%- endcomment -%}
-  {%- assign date_formats = {
-    "published": "%B %d, %Y",
-    "updated": "%B %d, %Y"
-  } -%}
+  {% assign published = include.published | date: "%B %d, %Y" %}
+  {% assign updated = include.updated | date: "%B %d, %Y" %}
 
-  {%- for key in ["published", "updated"] -%}
-    {%- assign value = include[key] | default: "" -%}
-    {%- if value != empty -%}
-      {%- assign date_obj = value | date: date_formats[key] -%}
-      <span data-tooltip="Originally {{ key | capitalize }} on">
-        {%- include icon.html icon="fa-regular fa-calendar" -%}
-        <span>{{ date_obj }}</span>
-      </span>
-    {%- endif -%}
-  {%- endfor -%}
-
-  {%- comment -%} 处理更新日期对比 {%- endcomment -%}
-  {%- if include.updated and include.updated != include.published -%}
-    <span data-tooltip="Last updated on">
-      {%- include icon.html icon="fa-solid fa-clock-rotate-left" -%}
-      <span>{{ include.updated | date: "%B %d, %Y" }}</span>
+  {% if published %}
+    <span data-tooltip="Originally published on">
+      {% include icon.html icon="fa-regular fa-calendar" %}
+      <span>{{ published }}</span>
     </span>
-  {%- endif -%}
+  {% endif %}
 
-  {%- comment -%} 处理标签 {%- endcomment -%}
-  {%- if include.tags -%}
-    {%- include tags.html tags=include.tags link="blog" -%}
-  {%- endif -%}
+  {% if updated and updated != "" and updated != published %}
+    <span data-tooltip="Last updated on">
+      {% include icon.html icon="fa-solid fa-clock-rotate-left" %}
+      <span>{{ updated }}</span>
+    </span>
+  {% endif %}
 </div>
+
+{% if include.tags %}
+  {% include tags.html tags=include.tags link="blog" %}
+{% endif %}
