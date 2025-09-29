@@ -1,7 +1,6 @@
 # site properties and page defaults
 title: digital_agriculture_team's Website
-subtitle:
-logo-text: false
+logo-text: true
 description: An engaging 1-3 sentence description of your lab.
 header: images/background.jpg
 footer: images/background.jpg
