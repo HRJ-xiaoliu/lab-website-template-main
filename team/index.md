@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-huazhongnonyedaxue
+华中农业大学
 
 {% include section.html %}
 
