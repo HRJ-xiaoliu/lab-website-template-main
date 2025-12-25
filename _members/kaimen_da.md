@@ -1,6 +1,6 @@
 ---
 name: kaimen da
-image: images/kaimen_da.jpg
+image: images\member\kaimen_da.jpg
 role: CAT
 group: 
 links:
