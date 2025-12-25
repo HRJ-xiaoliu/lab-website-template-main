@@ -2,7 +2,7 @@
 name: kaimen da
 image: images\member\kaimen_da.jpg
 role: CAT
-group: 抖音职业技术学院
+affiliation: 抖音职业技术学院
 links:
   email: kaimenda@123.com
 
