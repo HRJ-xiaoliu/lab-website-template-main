@@ -2,7 +2,7 @@
 name: 大开门
 image: images/member/kaimen_da.jpg
 role: CAT
-affiliation: 华中农业大学
+affiliation: 抖音职业技术学院
 links:
   email:kitty@cat.com 
 ---
