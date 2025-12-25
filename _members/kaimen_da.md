@@ -1,6 +1,6 @@
 ---
 name: 大开门
-image: images/member/hang_xiong.jpg
+image: images/member/kaimen_da.jpg
 role: CAT
 affiliation: 华中农业大学
 links:
