@@ -1,1 +1,1 @@
-Sitemap: https://hrj-xiaoliu.github.io/lab-website-template-main/sitemap.xml
+Sitemap: http://aeconomy.cn/sitemap.xml
