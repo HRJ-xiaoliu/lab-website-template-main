@@ -1,15 +1,16 @@
 ---
-title: 联系我们
+title: Contact Us
 nav:
   order: 5
-  tooltip: 电子邮件、地址和位置
+  tooltip: email,address and location
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+&ensp;&ensp;&ensp;&ensp;我们珍视每一次相遇——无论是学术观点的切磋、研究合作的邀约，还是对团队动态的关切、对成果的反馈建议，都欢迎通过此渠道坦诚相告。不设门槛，唯愿以开放之姿倾听专业声音，分享探索足迹，让不同视角的碰撞为科研添一份可能。
+
+&ensp;&ensp;&ensp;&ensp;期待与你在此开启对话，共织更紧密的学术联结。
 
 {%
   include button.html
