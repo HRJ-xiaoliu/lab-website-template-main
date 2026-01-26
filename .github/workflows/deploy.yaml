@@ -1,4 +1,4 @@
-name: Optimized Jekyll Deploy to Aliyun OSS
+name: Verified Deploy to Aliyun OSS
 
 on:
   push:
@@ -11,10 +11,6 @@ env:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
-    defaults:
-      run:
-        working-directory: lab-website-template-main
 
     steps:
       - name: Checkout Code
@@ -25,7 +21,6 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-          working-directory: lab-website-template-main
 
       - name: Build Site
         run: |
@@ -41,4 +36,4 @@ jobs:
 
       - name: Sync to Aliyun OSS
         run: |
-          ossutil cp -rf ./lab-website-template-main/_site/ oss://digital-agriculture-team-lab/
+          ossutil cp -rf ./_site/ oss://digital-agriculture-team-lab/
