@@ -1,19 +1,9 @@
 {% assign emptyarray = "" | split: "," %}
-{% assign raw_data = site.data[include.data]
+{% assign data = site.data[include.data]
   | default: site[include.data]
   | default: emptyarray
   | data_filter: include.filter
 %}
-
-{% assign active_lang = site.active_lang | default: site.default_lang %}
-{% assign data = emptyarray %}
-
-{% for item in raw_data %}
-  {% assign item_lang = item.lang | default: site.default_lang %}
-  {% if item_lang == active_lang %}
-    {% assign data = data | push: item %}
-  {% endif %}
-{% endfor %}
 
 {% assign years = data
   | group_by_exp: "d", "d.date | date: '%Y'"

@@ -46,12 +46,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
-  - jekyll-polyglot
-
-# jekyll-polyglot settings
-languages: ["zh", "en"]
-default_lang: "zh"
-exclude_from_localization: ["images", "_styles", "_scripts"]
 
 # code block syntax highlighting
 highlighter: rouge

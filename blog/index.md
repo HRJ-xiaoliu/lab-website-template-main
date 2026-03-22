@@ -1,6 +1,5 @@
 ---
 title: Posts
-lang: zh
 nav:
   order: 4
   tooltip: 新闻与杂记

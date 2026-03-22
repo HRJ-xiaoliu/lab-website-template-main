@@ -55,11 +55,5 @@
         </a>
       {% endif %}
     {% endfor %}
-
-    {% if site.active_lang == "zh" %}
-      <a href="{{ site.baseurl }}/en{{ page.url }}" class="language-switcher" data-tooltip="Switch to English">English</a>
-    {% elsif site.active_lang == "en" %}
-      <a href="{{ site.baseurl }}{{ page.url }}" class="language-switcher" data-tooltip="切换至中文">中文</a>
-    {% endif %}
   </nav>
 </header>
